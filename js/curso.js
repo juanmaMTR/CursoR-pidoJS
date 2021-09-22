@@ -57,10 +57,40 @@ try {
 }
 
 //Arrays
-let vector=[1,2,3]
+let vector=[1,2,37,11,13,17,19,23,29,31,37]
 let guarreria=[1,2,'asdasdf',function(){console.log('PFF')},true]
 let matriz=[
   [1,2,3],
   [4,5,6],
   [7,8,9]
 ]
+
+console.log(matriz[1][2])
+
+//Recorrer un Arrays
+for(let i=0;i<vector.length;i++){
+  console.log(vector[i])
+}
+for(let elemento of vector){ //Recorre un vector
+  console.log(elemento);
+}
+for(let atributo in objeto){ //Recorre los atributos de un objeto
+  //console.log('El atributo \''+atributo+'\' vale '+objeto[atributo]);
+  console.log(`El atributo '${atributo}' vale ${objeto[atributo]}`);
+}
+
+let matriz2=[
+  [1,2,3],
+  [4,5,14,78],
+  [7,8]
+]
+for(let fila of matriz2){
+  console.log(fila);
+}
+for(let fila of matriz2){
+  for(let elemento of fila){
+    console.log(elemento);
+  }
+}
+
+  
